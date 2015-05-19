@@ -1,0 +1,15 @@
+<template name="_section">
+<div class="col s12 m6">
+  <div class="card medium yellow lighten-5">
+    <div class="card-content" style="height: 100%">
+      <span class="card-title grey-text text-darken-4">{{title}}</span>
+      <p>{{description}}</p>
+      <ul class="collection">
+        {{#each topics}}
+          <li class="collection-item">{{text}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+</template>
