@@ -13,6 +13,8 @@ underscore
 underscorestring:underscore.string
 mquandalle:jade
 materialize:materialize
-sacha:autorouter
 iron:router
 jquery
+alanning:roles
+accounts-password
+useraccounts:materialize
