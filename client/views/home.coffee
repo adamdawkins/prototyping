@@ -1,6 +1,3 @@
-Template.home.rendered = ->
-  $('.parallax').parallax()
-
 Template.home.helpers
-  sections: ->
-    Sections.find().fetch()
+  reset_password_token: ->
+    Session.get '_reset_password_token'

@@ -2,6 +2,11 @@
 <nav class="dark-blue" role="navigation">
   <div class="nav-wrapper container">
     <a id="logo-container" href="#" class="brand-logo">Prototyping With Meteor</a>
+  <ul class="right">
+    {{#if currentUser}} 
+      {{> _nav_login_section}}
+    {{/if}}
+  </ul>
   </div>
 </nav>
   {{>yield}}

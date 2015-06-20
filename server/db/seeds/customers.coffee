@@ -1,5 +1,4 @@
 Meteor.startup( ->
-  Meteor.users.remove({})
   if Meteor.users.find().count() is 0
     customers = JSON.parse(Assets.getText 'customers.json')
     for customer in customers
