@@ -1,10 +1,14 @@
 <template name="_nav_login_section">
-  <li>
     {{#if currentUser}} 
+    <li>
       Signed in as {{salutation}} 
-      (<span id="logout" class="logout-link" data-action="logout" style="text-decoration: underline; cursor: pointer;">Logout</span>)
+      </li>
+      <li>
+        <a data-action="logout">Logout</a>
+</li>
     {{else}}
-      <a href="/login">Student Login</a>
+      <li>
+        <a href="/login">Student Login</a>
+      </li>
     {{/if}}
-  </li>
 </template>
