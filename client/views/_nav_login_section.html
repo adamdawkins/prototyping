@@ -1,5 +1,10 @@
 <template name="_nav_login_section">
-<li>Signed in as {{salutation}} 
-(<span id="logout" class="logout-link" data-action="logout" style="text-decoration: underline; cursor: pointer;">Logout</span>)
-</li>
+  <li>
+    {{#if currentUser}} 
+      Signed in as {{salutation}} 
+      (<span id="logout" class="logout-link" data-action="logout" style="text-decoration: underline; cursor: pointer;">Logout</span>)
+    {{else}}
+      <a href="/login">Student Login</a>
+    {{/if}}
+  </li>
 </template>
